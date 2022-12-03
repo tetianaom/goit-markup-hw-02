@@ -1,0 +1,135 @@
+:root {
+  --primary-text-color: #434455;
+  --primary-white-color: #ffffff;
+  --title-text-color: #2e2f42;
+  --accent-color: #4d5ae5;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+
+  color: var(--primary-text-color);
+}
+
+.list {
+  list-style-type: none;
+}
+
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+
+  color: var(--title-text-color);
+  text-decoration: none;
+}
+
+.logo span {
+  color: var(--accent-color);
+}
+
+.link {
+  color: var(--title-text-color);
+  text-decoration: none;
+}
+
+.link.current {
+  color: var(--accent-color);
+}
+
+.site-nav .link:focus,
+.site-nav .link:hover {
+  color: var(--primary-text-color);
+}
+
+.site-nav .link:active {
+  color: var(--accent-color);
+}
+
+.contact-nav .link:hover,
+.contact-nav .link:focus {
+  color: var(--accent-color);
+}
+
+.hero {
+  color: var(--primary-white-color);
+
+  background-color: var(--title-text-color);
+}
+
+.hero-title {
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+.hero-button {
+  font-weight: 600;
+  line-height: 1.19;
+  letter-spacing: 0.04em;
+
+  color: inherit;
+
+  background-color: var(--accent-color);
+}
+
+.hero-button:active {
+  background-color: #404bbf;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.2;
+
+  color: var(--title-text-color);
+}
+
+.title-work,
+.title-team {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 1.11;
+
+  color: var(--title-text-color);
+}
+
+.footer-main {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+
+  background-color: var(--title-text-color);
+}
+
+.footer-main .logo {
+  color: #f4f4fd;
+}
+
+.footer-main .desc {
+  color: #e7e9fc;
+}
+
+.filter-item {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+
+  color: var(--accent-color);
+
+  background-color: #f4f4fd;
+}
+
+.filter-item:hover,
+.filter-item:focus {
+  color: var(--primary-white-color);
+
+  background-color: var(--accent-color);
+}
