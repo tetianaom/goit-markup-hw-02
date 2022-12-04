@@ -3,6 +3,7 @@
   --primary-white-color: #ffffff;
   --title-text-color: #2e2f42;
   --accent-color: #4d5ae5;
+  --light-accent-color: #f4f4fd;
 }
 
 body {
@@ -19,7 +20,7 @@ body {
 
 .logo {
   font-family: 'Raleway', sans-serif;
-  font-weight: 700;
+  font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
   letter-spacing: 0.03em;
@@ -33,6 +34,9 @@ body {
 }
 
 .link {
+  font-size: 16px;
+  font-weight: 500;
+
   color: var(--title-text-color);
   text-decoration: none;
 }
@@ -62,7 +66,7 @@ body {
 }
 
 .hero-title {
-  font-weight: 600;
+  font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
   text-align: center;
@@ -70,13 +74,17 @@ body {
 }
 
 .hero-button {
-  font-weight: 600;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.04em;
 
   color: inherit;
 
   background-color: var(--accent-color);
+
+  cursor: pointer;
 }
 
 .hero-button:active {
@@ -85,46 +93,58 @@ body {
 
 .title {
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.2;
 
   color: var(--title-text-color);
 }
 
-.title-work,
-.title-team {
+.work-title,
+.team-title {
   font-size: 36px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.11;
 
   color: var(--title-text-color);
 }
 
-.footer-main {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
+.team {
+  background-color: var(--light-accent-color);
+}
 
+.team-item {
+  background-color: var(--primary-white-color);
+}
+
+.footer-main {
   background-color: var(--title-text-color);
 }
 
 .footer-main .logo {
-  color: #f4f4fd;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+
+  color: var(--light-accent-color);
 }
 
 .footer-main .desc {
   color: #e7e9fc;
+
+  font-weight: 400;
 }
 
 .filter-item {
   font-family: inherit;
   font-size: 16px;
   line-height: 1.5;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 0.04em;
 
   color: var(--accent-color);
 
-  background-color: #f4f4fd;
+  background-color: var(--light-accent-color);
+
+  cursor: pointer;
 }
 
 .filter-item:hover,
@@ -132,4 +152,17 @@ body {
   color: var(--primary-white-color);
 
   background-color: var(--accent-color);
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
